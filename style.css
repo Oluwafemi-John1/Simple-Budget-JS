@@ -1,31 +1,25 @@
-/* body {
-    background: url("pexels-karolina-grabowska-4386366.jpg");
-    background-size: cover;
-    backdrop-filter: blur(15px);
-} */
-/* body {
-    background: linear-gradient(to right, red , yellow);
-    background-size: cover;
-    backdrop-filter: blur(25px);
-} */
-
 body {
-    background-color: lightyellow;
-    mix-blend-mode: difference;
+    background-color: #592615;
+    color: #F5A454;
+}
+
+h3 {
+
+    mix-blend-mode: difference !important;
 }
 body::after {
     position: absolute;
     content: "";
+    background-color: #291D1E;
     inset: 0;
-    left: 30%;
-    background-color: lightgreen;
+    left: 35%;
     z-index: -1;
     clip-path: polygon(
         30% 0,
         100% 0,
         100% 100%,
         20% 100%,
-        0 70%
+        0% 70%
     );
 }
 
@@ -39,7 +33,7 @@ body::after {
     margin: 0 5px;
 }
 
-.container.col-10 > p {
+.container.col-10>p {
     text-align: justify;
 }
 
