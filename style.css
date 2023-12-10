@@ -3,10 +3,30 @@
     background-size: cover;
     backdrop-filter: blur(15px);
 } */
-body {
+/* body {
     background: linear-gradient(to right, red , yellow);
     background-size: cover;
     backdrop-filter: blur(25px);
+} */
+
+body {
+    background-color: lightyellow;
+    mix-blend-mode: difference;
+}
+body::after {
+    position: absolute;
+    content: "";
+    inset: 0;
+    left: 30%;
+    background-color: lightgreen;
+    z-index: -1;
+    clip-path: polygon(
+        30% 0,
+        100% 0,
+        100% 100%,
+        20% 100%,
+        0 70%
+    );
 }
 
 .flex-banner {
