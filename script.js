@@ -39,7 +39,7 @@ function addBudget() {
             overSpend.style.display = "block"
         } else {
             overSpend.style.display = "none"
-            showBudget.innerHTML += "<p class='my-2'>item.value + ' - ' + price.value</p>"
+            showBudget.innerHTML += "<p class='my-2'>" + item.value + ' - ' + price.value + "</p>"
             arith()
             item.value = ""
             price.value = ""
