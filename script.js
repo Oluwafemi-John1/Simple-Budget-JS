@@ -11,8 +11,9 @@ function pauseMusic() {
 
 function arith() {
     var priceOfItem = Number(document.getElementById("price").value)
-    newMoney = money - priceOfItem
+    var newMoney = money - priceOfItem
     showMoney.innerHTML = "Available Money: " + newMoney
+    money = newMoney
 }
 // A global variable to set money available
 var money = 10000
@@ -37,7 +38,8 @@ function addBudget() {
         if (Number(price.value) > money) {
             overSpend.style.display = "block"
         } else {
-            showBudget.innerHTML = item.value + " - " + price.value
+            overSpend.style.display = "none"
+            showBudget.innerHTML += "<p class='my-2'>item.value + ' - ' + price.value</p>"
             arith()
             item.value = ""
             price.value = ""
