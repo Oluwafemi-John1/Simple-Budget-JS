@@ -9,6 +9,7 @@ function pauseMusic() {
     song.pause()
 }
 
+// Code block to ensure new price is being updated as new items are being added
 function arith() {
     var priceOfItem = Number(document.getElementById("price").value)
     var newMoney = money - priceOfItem
@@ -35,6 +36,7 @@ function addBudget() {
     if (item.value === "" || price.value === "") {
         emptyField.style.display = "block"
     } else {
+        emptyField.style.display = "none"
         if (Number(price.value) > money) {
             overSpend.style.display = "block"
         } else {
