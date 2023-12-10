@@ -33,9 +33,10 @@
                 <p class="col-6" id="showDate"></p>
                 <p class="col-6 text-end" id="showMoney">Available money: #10,000</p>
             </div>
-            <input type="text" class="form-control my-2" placeholder="Enter item">
-            <input type="text" class="form-control my-2" placeholder="Enter price">
-            <button class="btn btn-secondary btn-sm w-100">Add</button>
+            <div class="alert my-1 alert-danger p-2 text-center" style="display: none;" id="emptyField">Input field(s) cannot be empty</div>
+            <input type="text" class="form-control my-2" placeholder="Enter item" id="item">
+            <input type="text" class="form-control my-2" placeholder="Enter price" id="price">
+            <button class="btn btn-secondary btn-sm w-100" onclick="addBudget()">Add</button>
         </div>
     </div>
 
