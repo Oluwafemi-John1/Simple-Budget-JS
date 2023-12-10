@@ -19,7 +19,7 @@ function arith() {
 
 // A global variable to set money available
 var money = 10000
-showMoney.innerHTML = "Available Money: " + money
+showMoney.innerHTML = "Available Money: ₦" + money
 
 // This displays the current date
 var daty = new Date().toLocaleDateString()
