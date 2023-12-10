@@ -1,3 +1,13 @@
+var music = "seunrere.mp3"
+var song = new Audio(music)
+
+function playMusic() {
+    song.play()
+}
+
+function pauseMusic() {
+    song.pause()
+}
 // A global variable to set money available
 var money = 10000
 showMoney.innerHTML = "Available Money: " + money
