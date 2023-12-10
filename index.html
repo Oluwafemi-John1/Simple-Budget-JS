@@ -26,14 +26,16 @@
         <p class="my-2">Love and light,</p>
         <p class="my-2 text-decoration-underline">Daddy</p>
         <div class="my-2 text-center">
-            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#one">Withdraw money</button>
+            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">Withdraw
+                money</button>
         </div>
-        <div class="my-4 shadow p-2 rounded-2">
+        <div class="my-4 shadow p-2 rounded-2" id="mainInputs">
             <div class="row fw-bold my-3">
                 <p class="col-6" id="showDate"></p>
                 <p class="col-6 text-end" id="showMoney">Available money: #10,000</p>
             </div>
-            <div class="alert my-1 alert-danger p-2 text-center" style="display: none;" id="emptyField">Input field(s) cannot be empty</div>
+            <div class="alert my-1 alert-danger p-2 text-center" style="display: none;" id="emptyField">Input field(s)
+                cannot be empty</div>
             <input type="text" class="form-control my-2" placeholder="Enter item" id="item">
             <input type="text" class="form-control my-2" placeholder="Enter price" id="price">
             <button class="btn btn-secondary btn-sm w-100" onclick="addBudget()">Add</button>
@@ -42,19 +44,25 @@
 
 
 
-    <div class="modal fade" id="one" role="dialog">
+    
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Withdraw money</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-
+                    <p>Welcome,</p>
+                    <p id="showDateModal"></p>
+                    <p>You have #10,000 to spend today. If you wish to continue, press OK</p>
                 </div>
-
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">OK</button>
+                </div>
             </div>
         </div>
     </div>
