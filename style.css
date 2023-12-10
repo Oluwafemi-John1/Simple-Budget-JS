@@ -1,3 +1,7 @@
+body {
+    background: url("pexels-karolina-grabowska-4386366.jpg");
+}
+
 .flex-banner {
     display: flex;
     justify-content: center;
