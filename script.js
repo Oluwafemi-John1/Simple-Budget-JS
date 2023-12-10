@@ -16,6 +16,7 @@ function arith() {
     showMoney.innerHTML = "Available Money: " + newMoney
     money = newMoney
 }
+
 // A global variable to set money available
 var money = 10000
 showMoney.innerHTML = "Available Money: " + money
