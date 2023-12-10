@@ -11,3 +11,7 @@
 .container.col-10 > p {
     text-align: justify;
 }
+
+.form-control:focus {
+    box-shadow: none;
+}
