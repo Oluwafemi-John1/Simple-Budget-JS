@@ -1,16 +1,16 @@
 body {
-    background-color: #592615;
-    color: #F5A454;
+    /* background-color: #592615; */
+    background-color: #0F2A3D;
 }
 
-h3 {
-
+h3, p {
+    color: #F5A454;
     mix-blend-mode: difference !important;
 }
 body::after {
     position: absolute;
     content: "";
-    background-color: #291D1E;
+    background-color: #719EBD;
     inset: 0;
     left: 35%;
     z-index: -1;
