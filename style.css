@@ -1,5 +1,12 @@
-body {
+/* body {
     background: url("pexels-karolina-grabowska-4386366.jpg");
+    background-size: cover;
+    backdrop-filter: blur(15px);
+} */
+body {
+    background: linear-gradient(to right, red , yellow);
+    background-size: cover;
+    backdrop-filter: blur(25px);
 }
 
 .flex-banner {
