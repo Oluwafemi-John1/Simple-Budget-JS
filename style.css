@@ -1,12 +1,9 @@
-body {
-    /* background-color: #592615; */
-    background-color: #0F2A3D;
+body, .modall {
+    background-color: #0F2A3D !important;
 }
 
-h3,
-p {
+h3, h1, p, #withdrawMoney {
     color: #F5A454;
-    /* mix-blend-mode: difference; */
 }
 
 body::after {
