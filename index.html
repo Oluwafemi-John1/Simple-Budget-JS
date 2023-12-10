@@ -26,13 +26,13 @@
         <p class="my-2">Love and light,</p>
         <p class="my-2 text-decoration-underline">Daddy</p>
         <div class="my-2 text-center">
-            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">Withdraw
+            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="withdrawMoney">Withdraw
                 money</button>
         </div>
         <div class="my-4 shadow p-2 rounded-2" id="mainInputs">
             <div class="row fw-bold my-3">
                 <p class="col-6" id="showDate"></p>
-                <p class="col-6 text-end" id="showMoney">Available money: #10,000</p>
+                <p class="col-6 text-end" id="showMoney"></p>
             </div>
             <div class="alert my-1 alert-danger p-2 text-center" style="display: none;" id="emptyField">Input field(s)
                 cannot be empty</div>
@@ -61,7 +61,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-success">OK</button>
+                    <button type="button" class="btn btn-success" onclick="showInputs()" data-bs-dismiss="modal">OK</button>
                 </div>
             </div>
         </div>

@@ -15,3 +15,7 @@
 .form-control:focus {
     box-shadow: none;
 }
+
+#mainInputs {
+    display: none;
+}
