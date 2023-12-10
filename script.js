@@ -8,6 +8,12 @@ function playMusic() {
 function pauseMusic() {
     song.pause()
 }
+
+function arith() {
+    var priceOfItem = Number(document.getElementById("price").value)
+    newMoney = money - priceOfItem
+    showMoney.innerHTML = "Available Money: " + newMoney
+}
 // A global variable to set money available
 var money = 10000
 showMoney.innerHTML = "Available Money: " + money
@@ -28,6 +34,13 @@ function addBudget() {
     if (item.value === "" || price.value === "") {
         emptyField.style.display = "block"
     } else {
-
+        if (Number(price.value) > money) {
+            overSpend.style.display = "block"
+        } else {
+            showBudget.innerHTML = item.value + " - " + price.value
+            arith()
+            item.value = ""
+            price.value = ""
+        }
     }
 }

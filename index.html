@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="flex-banner shadow-sm">
+    <div class="flex-banner shadow-sm sticky-top top-0">
         <div class="flex-item"><button class="btn btn-primary btn-sm" data-bs-toggle="modal"
                 data-bs-target="#exampleModal2">Click for a surprise</button></div>
         <div class="flex-item"><button class="btn btn-success btn-sm" onclick="playMusic()">Play Music</button></div>
@@ -40,7 +40,11 @@
                 cannot be empty</div>
             <input type="text" class="form-control my-2" placeholder="Enter item" id="item">
             <input type="text" class="form-control my-2" placeholder="Enter price" id="price">
+            <small class="text-center alert alert-danger p-1 my-2" style="display: none;" id="overSpend">maximum amount exceeded</small>
             <button class="btn btn-secondary btn-sm w-100" onclick="addBudget()">Add</button>
+            <div class="my-3">
+                <p id="showBudget"></p>
+            </div>
         </div>
     </div>
 
