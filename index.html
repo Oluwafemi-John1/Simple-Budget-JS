@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <script src="bootstrap.js"></script>
 </head>
 
 <body>
@@ -27,34 +26,34 @@
         <p class="my-2">Love and light,</p>
         <p class="my-2 text-decoration-underline">Daddy</p>
         <div class="my-2 text-center">
-            <button class="btn btn-secondary" data-toggle="modal" data-target="staticBackdrop">Withdraw money</button>
+            <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="staticBackdrop">Withdraw money</button>
         </div>
     </div>
 
 
 
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="staticBackdrop">
+  Launch demo modal
+</button>
 
-
-    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdrop" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-
-                </div>
-
-            </div>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdrop" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            
+          </div>
+           
         </div>
+      </div>
     </div>
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-      Launch demo modal
-    </button>
+    
+    <script src="bootstrap.js"></script>
 </body>
 
 </html>
