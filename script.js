@@ -13,7 +13,7 @@ function pauseMusic() {
 function arith() {
     var priceOfItem = Number(document.getElementById("price").value)
     var newMoney = money - priceOfItem
-    showMoney.innerHTML = "Available Money: " + newMoney
+    showMoney.innerHTML = "Available Money: ₦" + newMoney
     money = newMoney
 }
 
@@ -42,7 +42,7 @@ function addBudget() {
             overSpend.style.display = "block"
         } else {
             overSpend.style.display = "none"
-            showBudget.innerHTML += "<p class='my-2'>" + item.value + ' - ' + price.value + "</p>"
+            showBudget.innerHTML += "<p class='my-2'>" + item.value + ' - ₦' + price.value + "</p>"
             arith()
             item.value = ""
             price.value = ""

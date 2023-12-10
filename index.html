@@ -30,10 +30,9 @@
                 <p class="col-6" id="showDate"></p>
                 <p class="col-6 text-end" id="showMoney"></p>
             </div>
-            <div class="alert my-1 alert-danger p-2 text-center" style="display: none;" id="emptyField">Input field(s)
-                cannot be empty</div>
+            <div class="alert my-1 alert-danger p-2 text-center" style="display: none;" id="emptyField">Input field(s) cannot be empty</div>
             <input type="text" class="form-control my-2" placeholder="Enter item" id="item">
-            <input type="text" class="form-control my-2" placeholder="Enter price" id="price">
+            <input type="number" class="form-control my-2" placeholder="Enter price (₦)" id="price">
             <small class="text-center alert alert-danger p-1 my-2" style="display: none;" id="overSpend">maximum amount exceeded</small>
             <button class="btn btn-success btn-sm w-100" onclick="addBudget()">Add</button>
             <div class="my-3">
@@ -57,7 +56,7 @@
                 <div class="modal-body">
                     <p>Welcome,</p>
                     <p id="showDateModal"></p>
-                    <p>You have #10,000 to spend today. If you wish to continue, press OK</p>
+                    <p>You have ₦10,000 to spend today. If you wish to continue, press OK</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
