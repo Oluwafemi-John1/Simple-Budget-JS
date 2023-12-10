@@ -1,0 +1,9 @@
+.flex-banner {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    border: 1px solid red;
+}
+.flex-item {
+    margin: 0 5px;
+}
